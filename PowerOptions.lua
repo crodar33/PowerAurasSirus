@@ -1083,8 +1083,10 @@ function PowaAuras:InitPage()
 	-- dual specs
 	self:EnableCheckBox("PowaTalentGroup1Button");
 	self:EnableCheckBox("PowaTalentGroup2Button");
+	self:EnableCheckBox("PowaTalentGroup3Button");
 	getglobal("PowaTalentGroup1Button"):SetChecked(aura.spec1);
 	getglobal("PowaTalentGroup2Button"):SetChecked(aura.spec2);
+	getglobal("PowaTalentGroup3Button"):SetChecked(aura.spec3);
 	
 	self:EnableCheckBox("PowaAuraDebugButton");
 	getglobal("PowaAuraDebugButton"):SetChecked(aura.Debug);

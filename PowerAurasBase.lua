@@ -35,7 +35,7 @@ PowaAuras = {
 	DebugCycle = false; 	
 	ResetTargetTimers = false;
 	
-	ActiveTalentGroup = GetActiveTalentGroup();
+	ActiveTalentGroup = C_Talent.GetActiveTalentGroup();
 
 	WeAreInCombat = false;
 	WeAreInRaid = false;

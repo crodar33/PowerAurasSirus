@@ -2200,6 +2200,29 @@ Revert PowaBarSliderTemplate to inherit from OptionsSliderTemplate if it's fixed
                   <OnClick>PowaAuras:SettingChecked(self, "spec2");</OnClick>
                 </Scripts>
               </CheckButton>
+              
+              
+              <CheckButton name="PowaTalentGroup3Button"
+                           inherits="PowaCheckTemplate">
+                <Size>
+                  <AbsDimension x="25"
+                                y="25" />
+                </Size>
+                <Anchors>
+                  <Anchor point="LEFT"
+                          relativeTo="PowaTalentGroup1Button"
+                          relativePoint="RIGHT">
+                    <Offset>
+                      <AbsDimension x="120"
+                                    y="0" />
+                    </Offset>
+                  </Anchor>
+                </Anchors>
+                <Scripts>
+                  <OnLoad>self.tooltipText = PowaAuras.Text.aideTalentGroup3; getglobal("PowaTalentGroup3ButtonText"):SetText(PowaAuras.Text.nomTalentGroup3);</OnLoad>
+                  <OnClick>PowaAuras:SettingChecked(self, "spec3");</OnClick>
+                </Scripts>
+              </CheckButton>
 
               <CheckButton name="PowaGroupAnyButton"
                            inherits="PowaCheckTemplate">

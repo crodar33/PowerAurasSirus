@@ -42,7 +42,7 @@ function PowaAuras:Dump_Safe()
 	-- CurrentMapContinent
 	PowaState["CurrentMapContinent"] = GetCurrentMapContinent();
 	--ActiveTalentGroup
-	PowaState["ActiveTalentGroup"] = GetActiveTalentGroup()
+	PowaState["ActiveTalentGroup"] = C_Talent.GetActiveTalentGroup()()
 	-- IsInInstance
 	PowaState["IsInInstance"] = IsInInstance();
 	-- IsMounted

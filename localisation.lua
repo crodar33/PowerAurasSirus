@@ -300,6 +300,8 @@ PowaAuras:MergeTables(PowaAuras.Text,
 	aideTalentGroup1 = "Show this effect only when you are in your primary talent spec.",
 	nomTalentGroup2 = "Spec 2",
 	aideTalentGroup2 = "Show this effect only when you are in your secondary talent spec.",
+	nomTalentGroup3 = "Spec 3",
+	aideTalentGroup3 = "Show this effect only when you are in your secondary talent spec.",
 
 	nomReset = "Reset Editor Positions",	
 	nomPowaShowAuraBrowser = "Show Aura Browser",

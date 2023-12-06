@@ -97,6 +97,7 @@ cPowaAura = PowaClass(function(aura, id, base)
 	
 	aura.spec1 = true;
 	aura.spec2 = true;
+	aura.spec3 = true;
 	aura.gcd = false;
 	aura.stance = 10;
 	aura.GTFO = 0;
@@ -419,10 +420,10 @@ function cPowaAura:CheckState(giveReason)
 	end
 
 	--- dual spec check
-	if ((not self.spec2 and PowaAuras.ActiveTalentGroup == 2) or (not self.spec1 and PowaAuras.ActiveTalentGroup == 1)) then
-		if (not giveReason) then return false; end
-		return false, PowaAuras.Text.nomReasonNotForTalentSpec;
-    end
+	if ((not self.spec2 and PowaAuras.ActiveTalentGroup == 2) or (not self.spec1 and PowaAuras.ActiveTalentGroup == 1)  or (not self.spec3 and PowaAuras.ActiveTalentGroup == 3)) then
+            if (not giveReason) then return false; end
+            return false, PowaAuras.Text.nomReasonNotForTalentSpec;
+        end
 	
 	--- mode combat
 	if ((PowaAuras.WeAreInCombat == true and self.combat == false) or (PowaAuras.WeAreInCombat == false and self.combat == true)) then

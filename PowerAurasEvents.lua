@@ -91,7 +91,7 @@ function PowaAuras:Setup()
 	self.WeAreMounted = (IsMounted()~=nil);
 	self.WeAreInVehicle = (UnitInVehicle("player")~=nil);
 
-	self.ActiveTalentGroup = GetActiveTalentGroup();
+	self.ActiveTalentGroup = C_Talent.GetActiveTalentGroup();
 	
 	self.Instance = self:GetInstanceType();
 	
@@ -153,7 +153,7 @@ function PowaAuras:GetStances()
 end
 		
 function PowaAuras:ACTIVE_TALENT_GROUP_CHANGED(...)
-	self.ActiveTalentGroup = GetActiveTalentGroup();
+	self.ActiveTalentGroup = C_Talent.GetActiveTalentGroup();
 	if (self.ModTest == false) then
 		--self:ShowText("ACTIVE_TALENT_GROUP_CHANGED");
 		self.PendingRescan = GetTime() + 1;
